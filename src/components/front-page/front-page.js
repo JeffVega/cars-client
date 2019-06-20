@@ -12,6 +12,7 @@ export default class FrontPage extends Component {
                 </div>
                <Search/>
                        
+                       
                     </div>
            
     
