@@ -1,13 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap");
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
+.front-page {
+  overflow: hidden; }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background: whitesmoke;
+  height: 15px; }
+  .nav__banner {
+    transform: translateX(10px); }
+  .nav__listed li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5px;
+    float: left;
+    margin: 5px;
+    transition: 1s;
+    font-size: 15px; }
+    .nav__listed li:hover {
+      color: #ff8616; }
+  .nav__listed li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.534);
+    text-transform: uppercase;
+    padding: 3px;
+    transition: 1s;
+    font-weight: bolder; }
+    .nav__listed li a:hover {
+      color: #ff8616; }
+    .nav__listed li a::after {
+      content: " ";
+      display: block;
+      clear: both; }
+
+.headerBox {
+  background: linear-gradient(rgba(0, 0, 0, 0.164), rgba(0, 0, 0, 0.575)), url("./utils/imgs/car.jpg") no-repeat center center;
+  background-size: cover;
+  height: 70vh;
+  width: 100%;
+  z-index: -1;
+  position: relative;
+  top: 0; }
+  .headerBox p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3em;
+    text-transform: capitalize;
+    height: 50vh;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden; }
+
+.searchQuery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgba(128, 128, 128, 0.363);
+  height: 20vh;
+  overflow: hidden; }
+  .searchQuery select {
+    border: none;
+    margin: 5px;
+    color: #777575;
+    background: transparent;
+    border-bottom: 2px solid black;
+    width: 100px;
+    padding-bottom: 5px; }
+  .searchQuery button {
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+    border-radius: 2.5px;
+    margin: 10px;
+    padding: 10px 5px;
+    background: #ff8616; }
